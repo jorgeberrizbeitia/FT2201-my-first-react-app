@@ -2,11 +2,12 @@
 function FoodCard(props) {
 
   console.log("props", props)
+  const { text, img } = props
 
   return (
     <div className="card">
-      <p>{props.text}</p>
-      <img width="200px" src={props.img} alt={"Arepa con Queso"} />
+      <p>{text}</p>
+      <img width="200px" src={img} alt={text} />
     </div>
   )
 
